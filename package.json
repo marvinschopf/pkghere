@@ -16,6 +16,8 @@
     "dugite": "^1.88.0-beta.0"
   },
   "scripts": {
-    "start": "babel-node src/index.js"
+    "build": "babel ./src --experimental --source-maps-inline -d ./dist",
+    "start": "yarn run build && node dist/index.js",
+    "package": "yarn run build && pkg ./dist/index.js"
   }
 }
