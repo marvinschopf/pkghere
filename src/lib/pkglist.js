@@ -1,10 +1,12 @@
 import { GitProcess } from 'dugite'
 import { existsSync, mkdirSync } from 'fs'
 import { yellow, red, bold, green } from 'chalk'
+import "core-js/stable"
+const regeneratorRuntime = require("regenerator-runtime")
 
 const pathToRepository = '~/.pkghere/repo'
 
-updateRepo = () => {
+async function updateRepo() {
     console.log(yellow("Updating the repository..."))
     if(existsSync('~/.pkghere/repo')) {
         if(existsSync('~/.pkghere/repo/.git')) {
