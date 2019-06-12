@@ -14,6 +14,6 @@
     "dugite": "^1.88.0-beta.0"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "babel-node src/index.js"
   }
 }
