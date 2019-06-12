@@ -1,5 +1,5 @@
-const chalk = require("chalk")
+import { yellow } from "chalk";
 
 
 
-console.log(chalk.yellow.bold("Starting..."))
+console.log(yellow.bold("Starting..."))
