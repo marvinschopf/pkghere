@@ -8,8 +8,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@babel/core": "7.4.5",
-    "@babel/node": "7.4.5",
+    "@babel/core": "7.25.9",
+    "@babel/node": "7.25.9",
     "async-to-generator": "^1.1.0",
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.7.0",
